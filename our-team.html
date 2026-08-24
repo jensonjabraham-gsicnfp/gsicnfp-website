@@ -5,6 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Team — Good Samaritan International Charities</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gsic-team {
+      font-family: inherit;
+      max-width: 100%;
+      padding: 2rem 0 4rem;
+    }
+    .gsic-section-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 3.5rem 0 2rem;
+    }
+    .gsic-section-label {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9a9a9a;
+      white-space: nowrap;
+    }
+    .gsic-section-rule {
+      flex: 1;
+      height: 1px;
+      background: #e2e2e2;
+    }
+    .gsic-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .gsic-card-grid.board {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gsic-card {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 16px;
+      padding: 2.5rem 1.5rem 2.25rem;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .gsic-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+      border-color: #c8e8dc;
+    }
+    .gsic-card.board-card:hover {
+      border-color: #ceccf5;
+    }
+    .gsic-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0 auto 1.5rem;
+      letter-spacing: 0.03em;
+    }
+    .gsic-avatar.teal {
+      background: #E1F5EE;
+      color: #0F6E56;
+    }
+    .gsic-avatar.purple {
+      background: #EEEDFE;
+      color: #534AB7;
+    }
+    .gsic-card-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+    .gsic-card-role {
+      font-size: 16px;
+      font-weight: 400;
+      color: #666666;
+      margin: 0;
+      line-height: 1.6;
+    }
+    @media (max-width: 720px) {
+      .gsic-card-grid,
+      .gsic-card-grid.board {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 420px) {
+      .gsic-card-grid,
+      .gsic-card-grid.board {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -28,48 +125,54 @@
   </section>
 
   <section>
-    <h3 style="text-align: center; margin-bottom: 1rem;">Executive Officers</h3>
-    <div class="team-grid">
-      <div class="team-member">
-        <div class="avatar">GA</div>
-        <p><strong>Gifty Abraham</strong></p>
-        <p class="role">President</p>
+    <div class="gsic-team">
+      <div class="gsic-section-header">
+        <span class="gsic-section-label">Executive Officers</span>
+        <div class="gsic-section-rule"></div>
       </div>
-      <div class="team-member">
-        <div class="avatar">AB</div>
-        <p><strong>Aimee Bent</strong></p>
-        <p class="role">Vice President</p>
+      <div class="gsic-card-grid">
+        <div class="gsic-card">
+          <div class="gsic-avatar teal">GA</div>
+          <p class="gsic-card-name">Gifty Abraham</p>
+          <p class="gsic-card-role">President</p>
+        </div>
+        <div class="gsic-card">
+          <div class="gsic-avatar teal">AB</div>
+          <p class="gsic-card-name">Aimee Bent</p>
+          <p class="gsic-card-role">Vice President</p>
+        </div>
+        <div class="gsic-card">
+          <div class="gsic-avatar teal">GT</div>
+          <p class="gsic-card-name">Gladson Thomas</p>
+          <p class="gsic-card-role">Treasurer</p>
+        </div>
+        <div class="gsic-card">
+          <div class="gsic-avatar teal">AT</div>
+          <p class="gsic-card-name">Abigail Thomas</p>
+          <p class="gsic-card-role">Secretary</p>
+        </div>
       </div>
-      <div class="team-member">
-        <div class="avatar">GT</div>
-        <p><strong>Gladson Thomas</strong></p>
-        <p class="role">Treasurer</p>
-      </div>
-      <div class="team-member">
-        <div class="avatar">AT</div>
-        <p><strong>Abigail Thomas</strong></p>
-        <p class="role">Secretary</p>
-      </div>
-    </div>
-  </section>
 
-  <section>
-    <h3 style="text-align: center; margin-bottom: 1rem;">Board of Directors</h3>
-    <div class="team-grid board">
-      <div class="team-member">
-        <div class="avatar">JA</div>
-        <p><strong>Jenson Abraham</strong></p>
-        <p class="role">Chairman</p>
+      <div class="gsic-section-header">
+        <span class="gsic-section-label">Board of Directors</span>
+        <div class="gsic-section-rule"></div>
       </div>
-      <div class="team-member">
-        <div class="avatar">SH</div>
-        <p><strong>Pastor Stephen Harvell</strong></p>
-        <p class="role">Board of Director</p>
-      </div>
-      <div class="team-member">
-        <div class="avatar">BB</div>
-        <p><strong>Byron Bent</strong></p>
-        <p class="role">Board of Director</p>
+      <div class="gsic-card-grid board">
+        <div class="gsic-card board-card">
+          <div class="gsic-avatar purple">JA</div>
+          <p class="gsic-card-name">Jenson Abraham</p>
+          <p class="gsic-card-role">Chairman</p>
+        </div>
+        <div class="gsic-card board-card">
+          <div class="gsic-avatar purple">SH</div>
+          <p class="gsic-card-name">Pastor Stephen Harvell</p>
+          <p class="gsic-card-role">Board of Director</p>
+        </div>
+        <div class="gsic-card board-card">
+          <div class="gsic-avatar purple">BB</div>
+          <p class="gsic-card-name">Byron Bent</p>
+          <p class="gsic-card-role">Board of Director</p>
+        </div>
       </div>
     </div>
   </section>
