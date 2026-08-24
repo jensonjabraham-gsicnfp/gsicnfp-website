@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --teal: #2c7a75;
   --teal-dark: #1f5b57;
@@ -15,7 +17,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
   color: var(--dark);
   line-height: 1.6;
 }
@@ -41,7 +43,7 @@ header {
 }
 
 header .logo img {
-  height: 60px;
+  height: 85px;
 }
 
 nav ul {
@@ -64,7 +66,7 @@ nav ul li a:hover {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,20 +102,25 @@ nav ul li a:hover {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.75rem 2rem;
-  background: var(--teal);
-  color: var(--white);
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background 0.2s ease;
+  padding: 1rem 2.5rem;
+  background: #eeeeee;
+  color: var(--dark);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .btn:hover {
-  background: var(--teal-dark);
+  background: var(--white);
+  transform: translateY(-1px);
 }
 
 .btn-purple {
   background: var(--purple);
+  color: var(--white);
 }
 
 .btn-purple:hover {
