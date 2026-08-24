@@ -166,6 +166,37 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+/* Two column layout (used on Our Mission) */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1100px;
+}
+
+.two-col .text-col h2 {
+  text-align: left;
+  color: var(--dark);
+  font-size: 2.5rem;
+}
+
+.two-col .text-col p {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.two-col .image-col img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Team */
 .team-grid {
   display: grid;
