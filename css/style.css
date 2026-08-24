@@ -166,6 +166,34 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.team-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
+}
+
+.team-intro h2 {
+  text-align: left;
+  color: var(--dark);
+  font-size: 2.75rem;
+  white-space: nowrap;
+}
+
+.team-intro p {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .team-intro {
+    grid-template-columns: 1fr;
+  }
+  .team-intro h2 {
+    white-space: normal;
+  }
+}
+
 /* Two column layout (used on Our Mission) */
 .two-col {
   display: grid;
