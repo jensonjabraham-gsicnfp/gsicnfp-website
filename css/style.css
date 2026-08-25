@@ -151,7 +151,7 @@ section.hero {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--teal-dark);
+  color: var(--dark);
 }
 
 .feature-grid {
