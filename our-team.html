@@ -107,7 +107,9 @@
 
   <header>
     <a href="index.html" class="logo"><img src="images/logo.png" alt="Good Samaritan International Charities"></a>
-    <nav>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('mobile-nav').classList.add('open')">&#9776;</button>
+    <nav id="mobile-nav">
+      <button class="menu-close" aria-label="Close menu" onclick="document.getElementById('mobile-nav').classList.remove('open')">&times;</button>
       <ul>
         <li><a href="our-work.html">Our Work</a></li>
         <li><a href="our-story.html">Our Story</a></li>
