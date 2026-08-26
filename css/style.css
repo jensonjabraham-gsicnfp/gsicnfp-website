@@ -356,7 +356,14 @@ footer a:hover {
 .footer-social {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
   margin-top: 1.25rem;
+}
+
+.footer-social span {
+  font-size: 0.85rem;
+  color: var(--gray);
 }
 
 .footer-social a {
