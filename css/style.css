@@ -353,6 +353,33 @@ footer a:hover {
   color: var(--teal);
 }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-social a:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 700px) {
   header {
     padding: 1rem 1.5rem;
